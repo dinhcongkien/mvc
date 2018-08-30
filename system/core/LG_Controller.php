@@ -10,37 +10,16 @@ class LG_Controller
 
 	function __construct()
 	{
-
+		require_once(PATH_SYSTEM.'/core/loader/LG_Config_Loader.php');
+		$this->config = new LG_Config_Loader();
+		$this->config->load('config');
 	}
 
 	public function index()
 	{
 		echo "INDEX";
 	}
-	public function load($controller, $action)
-	{
-		$controller = ucfirst(strtolower($controller).'_Controller');
-		$path_controller = PATH_APPLICATION.'/controller/'.$controller.'.php';
-		echo $path_controller;
-		$action = strtolower($action);
-		if (!file_exists($path_controller)) 
-		{
-			die('The Controller does not exist');
-		}
-		require_once($path_controller);
-		if(!class_exists($controller))
-		{
-			die('The Class does not exist');
-		}
 
-		$object = new $controller();
-		if (!method_exists($object, $action)) 
-		{
-			die('The Action does not exist');
-		}
-
-		$object->$action();
-	}
 
 
 

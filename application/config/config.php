@@ -1,7 +1,7 @@
-<?php
-define("DB_HOST", 'localhost');
-define("DB_USER", 'root');
-define("DB_PASSWORD", '');
-define("DEFAULT_CONTROLLER", 'index');
-define("DEFAULT_ACTION", 'index');
+<?php 
+if(!defined('PATH_SYSTEM'))die ('<h1 style="text-align:center;color:red">Bad request.....</h1>');
 
+return array(
+    'csrf_token_name'   => 'tokenname',
+    'base_url'          => 'http://localhost/mvc'
+);
