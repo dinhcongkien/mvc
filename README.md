@@ -1,3 +1,2 @@
 # mvc
-MVC chfg
-Huong dan su dung
+Mô hình MVC
