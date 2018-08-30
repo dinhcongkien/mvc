@@ -8,4 +8,9 @@ class New_Controller extends LG_Controller
 		print_r($this);
 	}
 
+	public function upload()
+	{
+		$this->library->load('upload');
+		$this->library->upload->upload();
+	}
 }

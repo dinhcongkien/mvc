@@ -13,6 +13,9 @@ class LG_Controller
 		require_once(PATH_SYSTEM.'/core/loader/LG_Config_Loader.php');
 		$this->config = new LG_Config_Loader();
 		$this->config->load('config');
+
+		require_once(PATH_SYSTEM.'/core/loader/LG_Library_Loader.php');
+		$this->library = new LG_Library_Loader();
 	}
 
 	public function index()
