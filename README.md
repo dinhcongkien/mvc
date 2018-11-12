@@ -1,5 +1,4 @@
 I.  Giới thiệu Git:
-    https://blog.duyetdev.com/2015/04/git-va-cac-khai-niem-co-ban.html#.VyM70PmLTDc
     * Tóm tắt:
       - Git dùng để quản lý phiên bản code, rất thuận lợi trong làm việc nhóm thậm chí làm 1 mình.
         Git có nhiều trang hỗ trợ như: github.com, bitbucket.com, ... không phải git là chỉ riêng trang github, git giống như là 1 chuẩn
@@ -15,11 +14,11 @@ I.  Giới thiệu Git:
       - Ví dụ thực tế:
         + Tải git về cài vào máy: https://git-scm.com/
         + Tiếp là phải tạo 1 remote repository (thư mục trên github.com) đó là chỗ lúc push code sẽ lên, repository đó có 1 đừng dẫn, đuôi là *.git.
-          ví du: https://github.com/Haosvit/QLPV.git. Việc tạo này phải tạo trên trang github.com, lên đó tìm nút tạo ("New repository").
+          ví du: https://github.com/langhoangtien/mvc.git. Việc tạo này phải tạo trên trang github.com, lên đó tìm nút tạo ("New repository").
         + Tạo 1 thư mục để chứa code dưới máy tính. Thư mục này sẽ liên kết với cái thư mục trên github sau này (làm theo các bước dưới)
         + Khởi tạo git trong thư mục mới tạo: Bấm chuột phải chọn "Git bash here" để mở màn hình console. Gõ: git init
         + Liên kết nó với thư mục ở github.com: cũng ở màn hình consolde mới mở lên, gõ: git remote add origin <đường dẫn tới thư mục trên github.com>
-          ví dụ: git remote add origin https://github.com/Haosvit/QLPV.git
+          ví dụ: git remote add origin https://github.com/langhoangtien/mvc.git
         + Sau khi liên kết 2 thư mục, lấy hết nội dung trên thư mục ở github về, trên console, gõ: git pull origin master
         + xong, đã lấy hết nội dung thư mục trên github về.
         + Khi làm gì đó thay đổi trên thư mục ở máy nhà, phải ADD sau đó COMMIT sau đó PUSH lên github. Làm như sau:
